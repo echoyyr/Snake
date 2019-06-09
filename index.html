@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #map{
+            width: 800px;
+            height: 600px;
+            background-color: #F2A620;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+  <div id="map"></div>
+<!--  <button id="btn">点击假设蛇吃到食物了</button>-->
+<!--  <button id="btn1">点击蛇移动一步</button>-->
+  <script src="tools.js"></script>
+  <script src="food.js"></script>
+  <script src="snake.js"></script>
+  <script src="game.js"></script>
+  <script>
+      var map =document.getElementById('map');
+      var game = new Game();
+      game.start();
+      // var food = new Food();
+      // food.render();
+      //
+      // var snake = new Snake();//通过构造函数创建出了一个实例
+      // snake.render();
+      //
+      // var btn = document.getElementById('btn');
+      // btn.onclick = function () {
+      //     food.render();
+      // };
+      //
+      // var btn1 = document.getElementById('btn1');
+      // btn1.onclick = function () {
+      //     snake.move();
+      //     snake.render();
+      // }
+
+  </script>
+
+</body>
+</html>
